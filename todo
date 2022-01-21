@@ -1,0 +1,35 @@
+Home:
+- add short caption to each selection on hover event? Is this accessible? Or a best practice for mobile? Need to do some research.
+
+
+Learn:
+- Render info from API onto the page with each card selection
+
+
+Read:
+- create pop up for when "More info" is clicked in Three card reading
+- create "cards" and add hover effects for PickACard @done
+- connect each card to RandomCard @done
+- add "Go Back" button or Text somewhere on the screen for each reading type.
+- Add instructions to main Reading page
+- add some kind of hover effect on the three card reading
+- add the ability for the cards to appear upside down randomly 
+- add a function that flips the card over to reveal your card in the pick a card component
+        - generate a different card for each card displayed on the page, in case the user clicks more than one, or maybe just have it re-generate a random card on each click?
+- add a button to each page with a "deal again" button
+
+
+Shop:
+-link to some small producers directly? this might be a better option -- prevents having to integrate a cart or creating confusion about WHO is selling these decks. Wouldn't want to appear as though it was me? Would be nice to have this auto update though...
+
+
+CSS:
+- create transitions between components
+- choose fonts and upload @done
+- tweak spacing/margins @done
+- Responsive styles
+- figure out how to get these flex children to stop pushing eachother around. Bullies.
+- style buttons @done
+- 
+Other:
+- Add a footer! 

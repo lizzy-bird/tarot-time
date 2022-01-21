@@ -1,38 +1,288 @@
-.App {
-  text-align: center;
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content:''; clear: both; height: 0; } 
+
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;300&family=Ma+Shan+Zheng&family=Sedgwick+Ave&display=swap');
+
+/* font-family: 'Advent Pro', sans-serif;*/
+
+
+
+
+/* General Styles */
+
+body{
+    font-size:62.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.App{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    background: linear-gradient(0deg,#000 5%,#302a37 55%);
+    min-height:100vh;
+    color:linen;
+    font-size:1.8rem;
+    font-family: 'Advent Pro', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2, p{
+    font-weight:100;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h3{
+    font-size:1.6rem;
 }
 
-.App-link {
-  color: #61dafb;
+h4{
+    font-size:1.4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+button{
+    border:none;
+    padding:1.5%;
+    border-radius:20px;
+    background-color:linen;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight:600;
+    font-size:1.4rem;
+    color:#302a37;
+    box-shadow:  4px 4px 6px #1e1a22, -4px -4px 6px #423a4c;
 }
+
+select{
+    font-family: 'Advent Pro', sans-serif;
+    border:none;
+    margin:5%;
+    padding:1.5%;
+}
+
+
+/* Header */
+
+header{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    border-bottom:1px solid linen;
+    justify-content:center;
+    text-align:center;
+    background-color:rgba(255, 255, 255, 0.1);
+
+}
+
+.title{
+    height:100px;
+    background-image: url(./icon.png);
+    background-size:fit;
+    background-repeat:no-repeat; 
+    font-family: 'Advent Pro', sans-serif;
+    font-size:6rem;
+    font-weight:300;
+    margin-bottom:0;
+    margin-top:20px;
+    padding-left:30px;
+    text-shadow:2px 4px 6px #423a4c;
+}
+
+nav{
+    
+    width:33%;
+    margin:0 auto;
+    
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:space-evenly;
+    padding:0;
+    
+}
+
+nav li{
+    font-family: 'Advent Pro', sans-serif;
+    font-weight:100;
+    font-size:1.4rem;
+}
+
+a{
+    text-decoration:none;
+    color:linen;
+}
+
+li a:hover{
+    text-decoration:underline;
+}
+
+.title:hover{
+    text-shadow:4px 4px 6px rgba(250, 240, 230, 0.507);
+}
+
+
+
+/* Components - General */
+
+.homePage,
+.readingPage,
+.learn{
+    width:100%;
+    max-width:100%;
+    text-align:center;
+}
+
+.Home, 
+.Reading{
+    width:90%;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-around;
+    padding:5%;
+    flex-grow:0;
+    
+}
+
+.panels{
+    width:250px;
+    height:250px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #2b2632, #332d3b);
+    box-shadow:  6px 6px 12px #1e1a22, -6px -6px 12px #423a4c; 
+    background-image:url(./background.png);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat; 
+}
+
+.panels:hover,
+.panels:focus{
+    width:300px;
+    height:300px;
+    box-shadow:  0 0 60px white;
+    
+}
+
+.tarotCardInfo{
+    display:flex;
+}
+
+.tarotCardInfo > *{
+    padding:2%;
+}
+
+.threeCards {
+    display:flex;
+    width:100%;
+    justify-content:space-evenly;
+    align-items:center;
+    padding:5%;
+    /* border:2px solid red; */
+}
+
+.threeRandom{
+    /* border:2px solid blue; */
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    text-align:center;
+    width:calc(100%/3);
+}
+
+.cardText{
+    width:100%;
+    margin:0 auto;
+    overflow-wrap:anywhere;
+}
+
+.cardDisplay{
+    display:flex;
+    max-width:90%;
+    padding:5%;
+}
+
+.pickACard{
+    height:300px;
+    min-width:200px;
+    border: 5px solid linen;
+    border-radius:20px;
+    background-color:black;
+    background-image:url(./background.png);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat; 
+    position:relative;
+    transition:transform 0.5s ease;
+    
+}
+
+.pickACard:hover{
+    box-shadow:  0 0 60px white;
+    transform:translateY(100px);
+    cursor: pointer;
+}
+
+.card1{
+    z-Index:1;
+}
+
+.card2{
+    z-index:2;
+    right:7%; 
+}
+
+.card3{
+    z-index:3;
+    right:14%;
+}
+
+.card4{
+    z-index:4;
+    right:21%;
+}
+
+.card5{
+    z-index:5;
+    right:28%;
+}
+
+.card6{
+    z-index:6;
+    right:35%;
+}
+
+.card7{
+    z-index:7;
+    right:42%;
+}
+
+.card8{
+    z-index:8;
+    right:49%;
+}
+
+.card9{
+    z-index:9;
+    right:56%;
+}
+
+.card10{
+    z-index:10;
+    right:63%;
+}
+
+
