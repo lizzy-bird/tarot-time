@@ -8,6 +8,7 @@ import Shop from './components/Shop/Shop';
 import RandomCard from './components/Reading/RandomCard';
 import ThreeRandom from './components/Reading/ThreeRandom'
 import PickACard from './components/Reading/PickACard'
+import UnderConstruction from './UnderConstruction'
 
 
 
