@@ -3,8 +3,6 @@ import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
 import Reading from './components/Reading/Reading';
-import Learn from './components/Learn/Learn';
-import Shop from './components/Shop/Shop';
 import RandomCard from './components/Reading/RandomCard';
 import ThreeRandom from './components/Reading/ThreeRandom'
 import PickACard from './components/Reading/PickACard'
