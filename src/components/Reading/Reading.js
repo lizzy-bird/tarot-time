@@ -7,7 +7,7 @@ function Reading () {
     return(
         
             <div className="readingPage">
-                <h2>Get a Reading</h2>
+                <h1>Get a Reading</h1>
 
                 <div className="Reading">
 
