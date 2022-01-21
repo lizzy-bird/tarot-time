@@ -1,8 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Header from './Header';
-import Reading from './Reading/Reading';
-import Learn from './Learn/Learn';
-import Shop from './Shop/Shop';
+import {  Link } from 'react-router-dom';
+
 
 const Home = () => {
     return(
