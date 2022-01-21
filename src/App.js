@@ -21,8 +21,10 @@ function App() {
       <Routes>
           <Route exact path="/" element={ <Home /> } />
           <Route exact path="/reading" element={ <Reading /> }/>
-          <Route exact path="/learn" element={ <Learn /> } />
-          <Route exact path="/shop" element={ <Shop /> } />
+          {/* <Route exact path="/learn" element={ <Learn /> } />
+          <Route exact path="/shop" element={ <Shop /> } /> */}
+          <Route exact path="/learn" element={ <UnderConstruction /> } />
+          <Route exact path="/shop" element={ <UnderConstruction /> } />
           <Route exact path="/random" element={ <RandomCard /> }/>
           <Route exact path="/three" element={ <ThreeRandom />} />
           <Route exact path="/pick-a-card" element={ <PickACard /> } />

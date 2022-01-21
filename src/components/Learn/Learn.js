@@ -18,7 +18,7 @@ function Learn () {
 
     return(
         <div className="learn">
-            <h1>Learn More</h1>
+            <h1>Learn More about the Rider-Waite-Smith tarot deck</h1>
             <p>Select a card from the dropdown below to learn more!</p>
             <form action="submit">
                 <label htmlFor="dropdown">Select a Card:</label>  
