@@ -1,7 +1,6 @@
 # Welcome to Tarot Time!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-#### View the live site: https://tarot-time-app.netlify.app/
+View the live site: https://tarot-time-app.netlify.app/
 
 
 ## This site is a work in progress! 
