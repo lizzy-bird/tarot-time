@@ -6,6 +6,8 @@ const Home = () => {
         
             <div className="homePage">
 
+                <p>Welcome Friends! This site is currently not optimized for mobile. Please enjoy exploring this work-in-proress!</p>
+
                 <h1>Choose a path to get started:</h1>
                 
                 <div className="Home">

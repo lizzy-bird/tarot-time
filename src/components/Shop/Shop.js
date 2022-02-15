@@ -23,6 +23,7 @@ function Shop () {
     return(
         <div className="shop">
         <h1>Shop</h1>
+        <h2>UPDATES COMING SOON!</h2>
         <p>Visit one of these vendors to purchase your very own deck and continue your tarot journey!</p>
         </div>
         

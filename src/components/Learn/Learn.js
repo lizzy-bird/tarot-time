@@ -40,7 +40,7 @@ function Learn () {
                     <p>{tarotCard.upright}</p>
                     <h4>Meaning Reverse:</h4>
                     <p>{tarotCard.reverse}</p>
-                    <h2>Description:</h2>
+                    <h4>Description:</h4>
                     <p>{tarotCard.description}</p>
                 </div>
             </div>  
