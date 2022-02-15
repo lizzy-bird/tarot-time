@@ -24,7 +24,7 @@ function CardList (props) {
         console.log(`${value}, ${name}, ${upright}, ${reverse}, ${description}`);
         
         // Step 2: pass the variable as props to this new object
-        const newTarotCard = {name:name, upright:upright}
+        const newTarotCard = {name:name, upright:upright, reverse:reverse, value:value, description:description}
 
         //Step 3.5: pass the new object into this function which we have declared above (line 4)
         onGetTarotCard(newTarotCard)

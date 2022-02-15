@@ -179,17 +179,22 @@ li a:hover{
 
 .tarotCardInfo{
     display:flex;
+    justify-content:space-evenly;
 }
 
 .tarotCardInfo > *{
     padding:2%;
 }
 
+.tarotCardInfo img,
+.threeRandom img{
+    max-height:522px;
+}
+
 .threeCards {
     display:flex;
     width:100%;
     justify-content:space-evenly;
-    align-items:center;
     padding:5%;
     /* border:2px solid red; */
 }
@@ -204,9 +209,19 @@ li a:hover{
 }
 
 .cardText{
-    width:100%;
-    margin:0 auto;
+    width:50%;
     overflow-wrap:anywhere;
+}
+
+.moreInfoThree{
+    position:absolute;
+    z-index:100;
+    top:20%;
+    right:20%;
+    left:20%;
+    max-height:fit-content;
+    background-color:black;
+
 }
 
 .cardDisplay{
@@ -285,4 +300,6 @@ li a:hover{
     right:63%;
 }
 
-
+.shop{
+    text-align:center;
+}

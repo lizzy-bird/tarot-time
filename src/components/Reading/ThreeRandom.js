@@ -72,6 +72,9 @@ function ThreeRandom () {
     return(
         <section className="threeCards"> 
 
+            {/* Add a button here to return new reading */}
+            {/* Edit event handler to change other handleMoreInfo functions to false when they are clicked */}
+
             <div className="threeRandom">
                 
                 <img src={tarotImageOne} alt={cardOne.name} />
@@ -83,14 +86,14 @@ function ThreeRandom () {
                         moreInfoOne
                         ? null 
                         : 
-                        <>
-                        <h4>Meaning Upright:</h4>
-                        <p>{cardOne.meaning_up}</p>
-                        <h4>Meaning Reverse:</h4>
-                        <p>{cardOne.meaning_rev}</p>
-                        <h2>Description:</h2>
-                        <p>{cardOne.desc}</p>
-                        </>
+                        <div className="moreInfoThree">
+                            <h4>Meaning Upright:</h4>
+                            <p>{cardOne.meaning_up}</p>
+                            <h4>Meaning Reverse:</h4>
+                            <p>{cardOne.meaning_rev}</p>
+                            <h2>Description:</h2>
+                            <p>{cardOne.desc}</p>
+                        </div>
                     }
                 </div>
             </div>
@@ -105,14 +108,14 @@ function ThreeRandom () {
                             moreInfoTwo
                             ? null 
                             : 
-                            <>
+                            <div className="moreInfoThree">
                             <h4>Meaning Upright:</h4>
                             <p>{cardTwo.meaning_up}</p>
                             <h4>Meaning Reverse:</h4>
                             <p>{cardTwo.meaning_rev}</p>
                             <h2>Description:</h2>
                             <p>{cardTwo.desc}</p>
-                            </>
+                            </div>
                         }
                 </div>
             </div>
@@ -126,14 +129,14 @@ function ThreeRandom () {
                         moreInfoThree
                         ? null 
                         : 
-                        <>
+                        <div className="moreInfoThree">
                         <h4>Meaning Upright:</h4>
                         <p>{cardThree.meaning_up}</p>
                         <h4>Meaning Reverse:</h4>
                         <p>{cardThree.meaning_rev}</p>
                         <h2>Description:</h2>
                         <p>{cardThree.desc}</p>
-                        </>
+                        </div>
                         }
                 </div>
             </div>

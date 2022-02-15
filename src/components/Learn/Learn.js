@@ -5,8 +5,9 @@ import CardList from './CardList'
 
 function Learn () {
 
-    const initialTarotCard = {name:'Wheel of Fortune', upright: 'this is the upright meaning'};
+    const initialTarotCard = {name:'', value:'blank'};
     const [ tarotCard, setTarotCard ] = useState(initialTarotCard);
+    const tarotImage = `/images/${tarotCard.value}.jpg`
 
     const getTarotCard = (tarotCard) => {
         // console.log(getTarotCard)
@@ -18,10 +19,10 @@ function Learn () {
 
     return(
         <div className="learn">
-            <h1>Learn More about the Rider-Waite-Smith tarot deck</h1>
-            <p>Select a card from the dropdown below to learn more!</p>
+            <h1>Learn More about the Rider-Waite-Smith deck!</h1>
+            <p>Select a card from the dropdown below</p>
             <form action="submit">
-                <label htmlFor="dropdown">Select a Card:</label>  
+                <label hidden htmlFor="dropdown">Select a Card:</label>  
                 <select name="Search" id="dropdown">
                     <option value="" hidden>Search by Card Name</option>
 
@@ -31,9 +32,18 @@ function Learn () {
                 </select>
             </form>
 
-                   
-            <h2>This is where we want it to show!</h2>
-            <p>{tarotCard.name}</p>
+             <div className="tarotCardInfo">    
+                <img src={tarotImage} alt={tarotCard.name} />
+                <div className="cardText">
+                    <h2>{tarotCard.name}</h2>
+                    <h4>Meaning Upright:</h4>
+                    <p>{tarotCard.upright}</p>
+                    <h4>Meaning Reverse:</h4>
+                    <p>{tarotCard.reverse}</p>
+                    <h4>Description:</h4>
+                    <p>{tarotCard.description}</p>
+                </div>
+            </div>  
 
         </div>
         
