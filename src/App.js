@@ -7,7 +7,7 @@ import RandomCard from './components/Reading/RandomCard';
 import ThreeRandom from './components/Reading/ThreeRandom'
 import PickACard from './components/Reading/PickACard'
 import UnderConstruction from './UnderConstruction'
-import Learn from './Learn'
+import Learn from './components/Learn/Learn'
 
 
 
