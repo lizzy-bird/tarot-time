@@ -7,6 +7,7 @@ import RandomCard from './components/Reading/RandomCard';
 import ThreeRandom from './components/Reading/ThreeRandom'
 import PickACard from './components/Reading/PickACard'
 import UnderConstruction from './UnderConstruction'
+import Learn from './Learn'
 
 
 
@@ -22,7 +23,7 @@ function App() {
           <Route exact path="/reading" element={ <Reading /> }/>
           {/* <Route exact path="/learn" element={ <Learn /> } />
           <Route exact path="/shop" element={ <Shop /> } /> */}
-          <Route exact path="/learn" element={ <UnderConstruction /> } />
+          <Route exact path="/learn" element={ <Learn /> } />
           <Route exact path="/shop" element={ <UnderConstruction /> } />
           <Route exact path="/random" element={ <RandomCard /> }/>
           <Route exact path="/three" element={ <ThreeRandom />} />
