@@ -4,10 +4,10 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Reading from './components/Reading/Reading';
 import RandomCard from './components/Reading/RandomCard';
-import ThreeRandom from './components/Reading/ThreeRandom'
-import PickACard from './components/Reading/PickACard'
-import UnderConstruction from './UnderConstruction'
-import Learn from './components/Learn/Learn'
+import ThreeRandom from './components/Reading/ThreeRandom';
+import PickACard from './components/Reading/PickACard';
+import UnderConstruction from './UnderConstruction';
+import Learn from './components/Learn/Learn';
 
 
 
